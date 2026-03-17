@@ -16,7 +16,19 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Workshop Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.indigo),
+        fontFamily: 'Google Sans',
+        textTheme: const TextTheme(
+          headlineSmall: TextStyle(
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
+            color: Colors.blue,
+          ),
+          bodyMedium: TextStyle(
+            fontSize: 16,
+            color: Colors.blue,
+          ),
+        ),  
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,
         inputDecorationTheme: const InputDecorationTheme(
           filled: true,
