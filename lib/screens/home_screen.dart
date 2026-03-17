@@ -2,14 +2,22 @@ import 'package:flutter/material.dart';
 import '../services/auth_service.dart';
 import 'login_screen.dart';
 
-class HomeScreen extends StatelessWidget {
+
+class HomeScreen extends StatefulWidget {
   final AuthService authService;
 
   const HomeScreen({super.key, required this.authService});
 
   @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  bool _enjoyed = false; 
+
+  @override
   Widget build(BuildContext context) {
-    final user = authService.currentUser;
+    final user = widget.authService.currentUser; 
 
     return Scaffold(
       appBar: AppBar(
@@ -17,10 +25,11 @@ class HomeScreen extends StatelessWidget {
         actions: [
           TextButton(
             onPressed: () {
-              authService.signOut();
+              widget.authService.signOut();
               Navigator.of(context).pushReplacement(
                 MaterialPageRoute(
-                  builder: (_) => LoginScreen(authService: authService),
+                  builder: (_) =>
+                      LoginScreen(authService: widget.authService),
                 ),
               );
             },
@@ -29,10 +38,31 @@ class HomeScreen extends StatelessWidget {
         ],
       ),
       body: Center(
-        child: Text(
-          user == null ? 'Not signed in' : 'Signed in as ${user.email}',
-          style: Theme.of(context).textTheme.titleLarge,
-          textAlign: TextAlign.center,
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Text(
+              user == null ? 'Not signed in' : 'Signed in as ${user.email}',
+              style: Theme.of(context).textTheme.titleLarge,
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(height: 16),
+
+            Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Checkbox(
+                  value: _enjoyed,
+                  onChanged: (value) {
+                    setState(() {
+                      _enjoyed = value ?? false;
+                    });
+                  },
+                ),
+                const Text('I enjoyed this demo'),
+              ],
+            ),
+          ],
         ),
       ),
     );
