@@ -87,3 +87,8 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+
+  fonts:
+    - family: GoogleSans
+      fonts:
+        - asset: fonts/GoogleSans-VariableFont_GRAD,opsz,wght[1].ttf
