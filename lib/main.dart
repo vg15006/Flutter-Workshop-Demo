@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Workshop Demo',
       theme: ThemeData(
-        fontFamily: 'Google Sans',
+        fontFamily: 'Roboto',
         textTheme: const TextTheme(
           headlineSmall: TextStyle(
             fontSize: 24,

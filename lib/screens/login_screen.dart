@@ -107,7 +107,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       decoration: const InputDecoration(
                         labelText: 'Password',
                         border: OutlineInputBorder(),
-                        helperText: 'Try: flutter123',
+                        helperText: 'Try: ilovegdg123',
                       ),
                       obscureText: true,
                       autofillHints: const [AutofillHints.password],
