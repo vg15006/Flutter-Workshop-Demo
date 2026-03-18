@@ -104,8 +104,6 @@ Users can **enter an email and password**, see validation errors, simulate a **s
 
 ### Installing the Demo
 
-If you want to run this demo locally:
-
 1. **Clone the repository**
    ```bash
    git clone <your-repo-url>
@@ -118,11 +116,5 @@ If you want to run this demo locally:
 
 ### Running the Demo
 
-From the project root, choose one of the following:
-
-- **Run on Windows desktop**
-  ```bash
-  flutter run -d windows
-
-- **Let Fluter prompt you for a device**
-  flutter run 
+1. **From the project root, choose one of the prompted devices**
+   flutter run
