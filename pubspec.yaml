@@ -92,3 +92,6 @@ flutter:
     - family: GoogleSans
       fonts:
         - asset: fonts/GoogleSans-VariableFont_GRAD,opsz,wght[1].ttf
+  assets:
+    - assets/images/flutterlogo.png
+    - assets/images/profilepic.png

@@ -29,6 +29,7 @@ class MyApp extends StatelessWidget {
           ),
         ),  
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+        scaffoldBackgroundColor: const Color(0xFFf0fbff),
         useMaterial3: true,
         inputDecorationTheme: const InputDecorationTheme(
           filled: true,
