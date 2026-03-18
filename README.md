@@ -98,23 +98,23 @@ Users can **enter an email and password**, see validation errors, simulate a **s
 ### Prerequisites
 
 - Flutter SDK installed  
-  Check with:
+- Check with:
   ```bash
   flutter doctor
 
 ### Installing the Demo
-
 1. **Clone the repository**
    ```bash
    git clone <your-repo-url>
    cd flutter_workshop_demo
 2. **Navigate to the project folder**
+   ```bash
    cd flutter_workshop_demo
-3. **Install existing dependencies from the project root**
+4. **Install existing dependencies from the project root**
    ```bash
    flutter pub get
 
 ### Running the Demo
-
-1. **From the project root, choose one of the prompted devices**
+- **From the project root, choose one of the prompted devices**
+   ```bash
    flutter run
