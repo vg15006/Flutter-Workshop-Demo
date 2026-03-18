@@ -93,6 +93,7 @@ Users can **enter an email and password**, see validation errors, simulate a **s
   - Image assets via `Image.asset` and `flutter: assets:` configuration
 
 ---
+## Getting Started
 
 ### Prerequisites
 
@@ -101,7 +102,7 @@ Users can **enter an email and password**, see validation errors, simulate a **s
   ```bash
   flutter doctor
 
-## Installing This Demo App
+### Installing the Demo
 
 If you want to run this demo locally:
 
@@ -110,7 +111,7 @@ If you want to run this demo locally:
    git clone <your-repo-url>
    cd flutter_workshop_demo
 
-### Install Dependencies
+### Installing Dependencies
 
 From the project root:
 
