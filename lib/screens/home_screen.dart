@@ -41,6 +41,10 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
+            Image(
+              image: AssetImage('assets/images/profilepic.png'),
+              height: 150,
+            ),
             Text(
               user == null ? 'Not signed in' : 'Signed in as ${user.email}',
               style: Theme.of(context).textTheme.titleLarge,
